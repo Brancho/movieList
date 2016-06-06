@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Details</title>
+  </head>
+<body>
+  <div class="movies">
+    <h1>{{film.title}}</h1>
+
+    <p>
+      {{film.description}}
+      <br>
+      <br>
+      <br>
+      Rating: <strong>{{film.rating}}</strong>
+    </p>
+    <img src="{{film.image_url}}" alt="" width="250" />
+    <a href="/" id="back">Back to movies list</a>
+  </div>
+
+  <style>
+  .movies{
+    width: 500px;
+    height: 70vh;
+    border: 5px solid black;
+    padding: 20px 0 20px 20px;
+    background-color: #66BADE;
+    border-radius: 5px;
+    margin: 5% auto 0 auto;
+    position: relative;
+
+  }
+  img{
+    border: 5px solid #EFF0F2;
+
+  }
+  p{
+    text-align: right;
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+    font-family: monospace;
+  }
+  h1{
+    text-align: center;
+    font-family: fantasy;
+  }
+  #back{
+    float: right;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 8px 0 0 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #E33D6D;
+    background-color: #EFF0F2;
+    padding: 5px;
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+  }
+  strong{
+    font-size: 16px;
+  }
+  </style>
+  <script type="text/javascript" src="/stars.js">
+
+  </script>
+</body>
+</html>

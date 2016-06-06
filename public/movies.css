@@ -1,0 +1,87 @@
+body{
+  font-family: fantasy;
+  margin:5% 13%;
+}
+
+form{
+  float: left;
+  width: 400px;
+  height: 70vh;
+  border: 5px solid black;
+  padding: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    background-color: #66BADE;
+
+}
+form input, textarea{
+  border-radius: 5px;
+  background-color: #EFF0F2;
+  border: 1px solid black;
+}
+
+
+.movies{
+  float: right;
+  width: 480px;
+  height: 70vh;
+  border: 5px solid black;
+  padding: 20px 0 20px 0;
+  background-color: #66BADE;
+
+}
+.list{
+  width: 90%;
+  height: 75%;
+  margin: 0 20px 10px 20px;
+}
+
+#next, #previous, #first, #last{
+
+  font-weight: bolder;
+  font-size: 16px;
+  color: #E33D6D;
+  background-color: #EFF0F2;
+  padding: 5px;
+}
+#last{
+  float: right;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}
+#first{
+  float: left;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+#next{
+  float: right;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  border-radius: 8px 0 0 8px;
+}
+#previous{
+  float: left;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-radius: 0 8px 8px 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+  }
+li {
+  margin-bottom: 5px;
+  color: white;
+  font-family: monospace;
+
+}
+h1{
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="movies.css">
+  </head>
+  <body>
+
+       <div class="movies">
+         <h1>Movies</h1>
+
+         <div class="list">
+           {% for movie in movies %}
+             <li><a href="/movies/{{ movie._id }}">{{ movie.title }}, {{ movie.year }}, {{ movie.rating }}</a></li>
+           {% else %}
+             <li>No movies found.</li>
+           {% endfor %}
+         </div>
+
+        <a href="?page=1" id="first">first</a>
+        {% if prev_page != 0 %}
+         <a href="?page={{prev_page}}" id="previous">previous</a>
+        {% endif %}
+
+        <a href="?page={{last_page}}" id="last">last</a>
+        {% if next_page != last_page + 1 %}
+         <a href="?page={{next_page}}" id="next">next</a>
+         {% endif %}
+
+
+      </div>
+      <form action="/movies" method="POST">
+
+          title: <input type="text" name="title" value=""/>
+          year: <input type="text" name="year" value=""/>
+          imdb: <input type="text" name="imdb" value=""/>
+          rating: <input type="text" name="rating" value=""/>
+          description: <textarea name="description" rows="8" cols="40"></textarea>
+          image: <input type="text" name="image" value="">
+
+        <input type="submit" value="Submit"/>
+      </form>
+
+
+  </body>
+</html>
